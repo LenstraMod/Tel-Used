@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tel-Used</title>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body>
+
+    <h2>Login</h2>
+    <p>Yuk login dulu, biar bisa beli barang favoritmu!</p>
+
+    <form onsubmit="event.preventDefault();">
+
+        <div>   
+            <i data-lucide="user"></i>
+            <input type="text" placeholder="Username" required>
+        </div>
+
+        <br>
+
+        <div>
+            <i data-lucide="key-round"></i>
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <br>
+
+        <div>
+            <a href="#">Lupa Password?</a>
+        </div>
+
+        <br>
+
+        <button type="submit">Log In</button>
+
+        <br><br>
+
+        <p>
+            Belum memiliki akun? <a href="#">Daftar disini</a>
+        </p>
+
+    </form>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

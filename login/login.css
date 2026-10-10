@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.login {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 24px 40px calc(48% + 24px);  
+    overflow: hidden;
+
+    /* isi di tengah halaman */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Inter', Arial, sans-serif;
+    color: #111111;
+    background-color: #ffffff;
+}
+
+.banner-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 100%;
+    object-fit: cover;          
+}
+
+.sirip-kanan {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18%;
+    max-width: 340px;
+}
+
+.login h2 {
+    margin: 0 0 12px 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login p {
+    margin: 0 0 40px 0;
+    font-size: 12px;
+    color: #5b6275;
+    text-align: center;
+}
+
+.login form {
+    width: 100%;
+    max-width: 340px;
+}
+
+.login form br {
+    display: none;
+}
+
+.login form div {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+/* ikon (lucide jadi <svg>) di dalam input */
+.login form svg {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #3d4658;
+    fill: currentColor;
+}
+
+.login form input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding: 0 44px;
+    font-family: inherit;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #9aa0ac;
+    border-radius: 999px;
+    outline: none;
+}
+
+.login form input:focus {
+    border-color: #9e3b39;
+}
+
+/* link "Lupa Password?" */
+.login form div a {
+    display: block;
+    margin-top: -8px;
+    padding-bottom: 20px;
+    font-size: 11px;
+    text-align: right;
+    color: #5b6275;
+    text-decoration: none;
+}
+
+/* ---------- Tombol Log In ---------- */
+.login form button {
+    display: block;
+    width: 100%;
+    height: 44px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #9e3b39;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.login form button:hover {
+    background-color: #9b2321;
+}
+
+/* ---------- Teks "Belum memiliki akun?" ---------- */
+.login form p {
+    margin: 28px 0 0 0;
+    font-size: 11px;
+}
+
+.login form p a {
+    font-weight: 600;
+    color: #111111;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .login {
+        padding: 252px 24px 40px 24px;
+        justify-content: flex-start;
+    }
+
+    .banner-login {
+        width: 100%;
+        height: 220px;
+        object-position: center 59%;    
+    }
+
+    .sirip-kanan {
+        top: 220px;
+        width: 120px;
+    }
+
+    .login p {
+        margin-bottom: 28px;
+    }
+}
